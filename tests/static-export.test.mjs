@@ -57,9 +57,15 @@ test("eksport zawiera kompletną stronę Architekci Chmury", async () => {
   assert.match(html, /<html[^>]*lang="pl"/i);
   assert.match(html, /<title>Architekci Chmury \| Doradztwo AWS<\/title>/i);
   assert.match(html, /Budujemy/);
-  assert.match(html, /Strategia i architektura AWS/);
+  assert.match(html, /Migracje i modernizacja AWS/);
+  assert.match(html, /Migracje · Modernizacja · Agenci AI/);
   assert.match(html, /AWS Community Builder/);
   assert.match(html, /AWS Black Belt — Containers/);
+  assert.match(
+    html,
+    /Migracje i modernizacja AWS — również z użyciem agentów AI/,
+  );
+  assert.doesNotMatch(html, /SPECJALIZACJA/);
   assert.match(
     html,
     /href="https:\/\/itprofessional\.pl\/"[^>]*>[\s\S]*?IT Professional/,

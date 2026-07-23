@@ -1,11 +1,15 @@
 const services = [
   {
     index: "01",
-    label: "STRATEGY / ARCHITECTURE",
-    title: "Strategia i architektura AWS",
+    label: "MIGRATION / MODERNIZATION",
+    title: "Migracje i modernizacja AWS",
     description:
-      "Od decyzji biznesowej do bezpiecznej, skalowalnej architektury i realistycznej mapy migracji.",
-    details: ["Cloud strategy", "Well-Architected Review", "Landing Zone"],
+      "Od oceny środowiska i planu migracji po modernizację aplikacji i platform z wykorzystaniem agentów AI.",
+    details: [
+      "Migration strategy",
+      "Application modernization",
+      "AI-assisted delivery",
+    ],
   },
   {
     index: "02",
@@ -148,7 +152,7 @@ export default function Home() {
         </div>
         <div className="proof-item proof-item-wide">
           <span>A / 03</span>
-          <strong>AWS · DevOps · FinOps · Agentic AI</strong>
+          <strong>Migracje · Modernizacja · Agenci AI</strong>
         </div>
       </section>
 
@@ -235,9 +239,10 @@ export default function Home() {
             </p>
             <p>
               Współpracuję z największymi firmami i organizacjami, głównie z
-              segmentu mid-size i enterprise w Europie oraz USA. Wspieram
-              biznesy z różnych sektorów — od strategii i modernizacji, przez
-              platform engineering i FinOps, po rozwiązania AI. Łączę
+              segmentu mid-size i enterprise w Europie oraz USA. Najmocniej
+              koncentruję się na migracji i modernizacji środowisk AWS — także
+              z wykorzystaniem agentów AI, co przyspiesza analizę, planowanie i
+              realizację zmian. Wspierając biznesy z różnych sektorów, łączę
               techniczną głębię z językiem decyzji biznesowych, dlatego równie
               swobodnie pracuję z zespołami inżynierskimi, jak i z kadrą
               zarządzającą.
@@ -262,11 +267,16 @@ export default function Home() {
             </div>
             <div>
               <span>WYRÓŻNIENIA</span>
-              <strong>AWS Ambassador · AWS Community Builder</strong>
+              <strong>
+                AWS Ambassador · AWS Community Builder · AWS Black Belt —
+                Containers
+              </strong>
             </div>
             <div>
-              <span>SPECJALIZACJA</span>
-              <strong>AWS Black Belt — Containers</strong>
+              <span>GŁÓWNY KIERUNEK</span>
+              <strong className="expert-focus">
+                Migracje i modernizacja AWS — również z użyciem agentów AI
+              </strong>
             </div>
             <div>
               <span>SCENA I MEDIA</span>
