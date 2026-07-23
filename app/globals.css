@@ -750,11 +750,23 @@ a {
 }
 
 .expert-statement p {
-  margin: 0 0 28px;
-  font-size: clamp(20px, 1.8vw, 29px);
-  font-weight: 520;
+  margin: 0 0 24px;
+  font-size: clamp(16px, 1.25vw, 19px);
+  font-weight: 470;
+  letter-spacing: -0.018em;
+  line-height: 1.68;
+}
+
+.expert-statement .expert-lead {
+  margin-bottom: 30px;
+  font-size: clamp(20px, 1.75vw, 28px);
+  font-weight: 540;
   letter-spacing: -0.035em;
   line-height: 1.48;
+}
+
+.expert-statement p:last-child {
+  margin-bottom: 0;
 }
 
 .expert-spec {
@@ -779,6 +791,34 @@ a {
 .expert-spec strong {
   font-size: 16px;
   line-height: 1.5;
+}
+
+.expert-spec strong a {
+  color: inherit;
+  text-decoration-color: rgba(216, 67, 12, 0.55);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  transition:
+    color 180ms ease,
+    text-decoration-color 180ms ease;
+}
+
+.expert-spec strong a span {
+  color: #d8430c;
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: 0;
+}
+
+.expert-spec strong a:hover {
+  color: #d8430c;
+  text-decoration-color: #d8430c;
+}
+
+.expert-spec strong a:focus-visible {
+  border-radius: 2px;
+  outline: 2px solid #d8430c;
+  outline-offset: 4px;
 }
 
 .contact {

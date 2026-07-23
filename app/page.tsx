@@ -227,29 +227,59 @@ export default function Home() {
         </div>
         <div className="expert-grid">
           <div className="expert-statement">
-            <p>
-              Ponad 20 lat w branży IT nauczyło mnie, że najlepsza architektura
-              nie zaczyna się od usługi AWS. Zaczyna się od zrozumienia ludzi,
-              procesów, ryzyka i ekonomii produktu.
+            <p className="expert-lead">
+              Od ponad 20 lat pracuję na styku infrastruktury, architektury i
+              biznesu. To doświadczenie nauczyło mnie, że najlepsza
+              architektura nie zaczyna się od usługi AWS — zaczyna się od
+              zrozumienia ludzi, procesów, ryzyka i ekonomii produktu.
             </p>
             <p>
-              Dziś jako AWS Ambassador pomagam organizacjom projektować chmurę,
-              która jest jednocześnie nowoczesna, operacyjnie dojrzała i
-              finansowo odpowiedzialna.
+              Współpracuję z największymi firmami i organizacjami, głównie z
+              segmentu mid-size i enterprise w Europie oraz USA. Wspieram
+              biznesy z różnych sektorów — od strategii i modernizacji, przez
+              platform engineering i FinOps, po rozwiązania AI. Łączę
+              techniczną głębię z językiem decyzji biznesowych, dlatego równie
+              swobodnie pracuję z zespołami inżynierskimi, jak i z kadrą
+              zarządzającą.
+            </p>
+            <p>
+              Wiedzą dzielę się także poza projektami: podczas AWS Summits,
+              re:Invent, AWS Community Days i meetupów w Polsce oraz na świecie,
+              a także na łamach miesięcznika IT Professional. Dobra prezentacja
+              nie jest dla mnie dodatkiem — to narzędzie, które zamienia
+              złożoną technologię w jasne decyzje i buduje porozumienie między
+              biznesem a IT.
             </p>
           </div>
           <div className="expert-spec">
             <div>
+              <span>ZASIĘG</span>
+              <strong>Europa · USA</strong>
+            </div>
+            <div>
+              <span>SKALA</span>
+              <strong>Mid-size · Enterprise</strong>
+            </div>
+            <div>
+              <span>WYRÓŻNIENIA</span>
+              <strong>AWS Ambassador · AWS Community Builder</strong>
+            </div>
+            <div>
               <span>SPECJALIZACJA</span>
-              <strong>Wyłącznie AWS</strong>
+              <strong>AWS Black Belt — Containers</strong>
             </div>
             <div>
-              <span>PERSPEKTYWA</span>
-              <strong>Technologia × biznes</strong>
-            </div>
-            <div>
-              <span>DOŚWIADCZENIE</span>
-              <strong>Infrastruktura → DevOps → FinOps → AI</strong>
+              <span>SCENA I MEDIA</span>
+              <strong>
+                AWS Summits · re:Invent · Community Days ·{" "}
+                <a
+                  href="https://itprofessional.pl/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  IT Professional <span aria-hidden="true">↗</span>
+                </a>
+              </strong>
             </div>
           </div>
         </div>

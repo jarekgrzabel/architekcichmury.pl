@@ -58,6 +58,12 @@ test("eksport zawiera kompletną stronę Architekci Chmury", async () => {
   assert.match(html, /<title>Architekci Chmury \| Doradztwo AWS<\/title>/i);
   assert.match(html, /Budujemy/);
   assert.match(html, /Strategia i architektura AWS/);
+  assert.match(html, /AWS Community Builder/);
+  assert.match(html, /AWS Black Belt — Containers/);
+  assert.match(
+    html,
+    /href="https:\/\/itprofessional\.pl\/"[^>]*>[\s\S]*?IT Professional/,
+  );
   assert.match(html, /kontakt@architekcichmury\.pl/);
   assert.doesNotMatch(html, /oai-authenticated-user|chatgpt\.site/i);
 });
