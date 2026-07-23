@@ -14,7 +14,9 @@ Produkcja działa pod adresem [https://architekcichmury.pl](https://architekcich
 - Runtime MyDevil: `app.js` + `out/`, bez instalowania zależności na serwerze.
 - Lokalnie hostowane fonty Geist; brak pobierania fontów podczas produkcyjnego builda.
 - Brak bazy danych, logowania, API, uploadów i funkcji serwerowych.
-- Link kontaktowy używa `mailto:`.
+- Adres kontaktowy nie występuje w statycznym HTML. Przycisk ujawnia go dopiero
+  po interakcji użytkownika, dekodując go po stronie przeglądarki; ujawniony
+  adres staje się linkiem `mailto:`.
 
 Prywatne repozytorium GitHub jest jedynym źródłem kodu, a MyDevil jedynym środowiskiem i procesem publikacji.
 

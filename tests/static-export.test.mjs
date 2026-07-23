@@ -70,7 +70,9 @@ test("eksport zawiera kompletną stronę Architekci Chmury", async () => {
     html,
     /href="https:\/\/itprofessional\.pl\/"[^>]*>[\s\S]*?IT Professional/,
   );
-  assert.match(html, /kontakt@architekcichmury\.pl/);
+  assert.match(html, /Umówmy rozmowę/);
+  assert.doesNotMatch(html, /kontakt@architekcichmury\.pl/i);
+  assert.doesNotMatch(html, /mailto:/i);
   assert.doesNotMatch(html, /oai-authenticated-user|chatgpt\.site/i);
 });
 

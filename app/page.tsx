@@ -1,3 +1,5 @@
+import { ProtectedContact } from "./protected-contact";
+
 const services = [
   {
     index: "01",
@@ -312,15 +314,9 @@ export default function Home() {
           Zacznijmy od konkretnej rozmowy o architekturze, kosztach lub kolejnym
           etapie rozwoju Twojej platformy.
         </p>
-        <a
-          className="button button-light"
-          href="mailto:kontakt@architekcichmury.pl?subject=Porozmawiajmy%20o%20chmurze"
-        >
-          <span>Umówmy rozmowę</span>
-          <span className="button-arrow" aria-hidden="true">
-            ↗
-          </span>
-        </a>
+        <div className="contact-reveal" aria-live="polite">
+          <ProtectedContact />
+        </div>
       </section>
 
       <footer>

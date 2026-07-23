@@ -865,6 +865,24 @@ a {
   color: var(--ink);
 }
 
+.contact-reveal {
+  position: relative;
+  z-index: 2;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.contact-reveal-button {
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
+  text-align: left;
+}
+
+.contact-email-link {
+  letter-spacing: -0.025em;
+}
+
 .button-light:hover {
   background: var(--ink);
   color: var(--cream);
