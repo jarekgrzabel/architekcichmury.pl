@@ -2,7 +2,7 @@
 
 ## Cel
 
-Publiczna, jednostronicowa strona wizerunkowa „Architekci Chmury”. Główna wersja produkcyjna ma działać na zewnętrznym hostingu MyDevil, niezależnie od OpenAI Sites i Cloudflare.
+Publiczna, jednostronicowa strona wizerunkowa „Architekci Chmury”. Jedyna wersja produkcyjna utrzymywana w ramach tego projektu działa na zewnętrznym hostingu MyDevil.
 
 Produkcja działa pod adresem [https://architekcichmury.pl](https://architekcichmury.pl). Pierwsze wdrożenie wykonano 23 lipca 2026 r.
 
@@ -16,7 +16,7 @@ Produkcja działa pod adresem [https://architekcichmury.pl](https://architekcich
 - Brak bazy danych, logowania, API, uploadów i funkcji serwerowych.
 - Link kontaktowy używa `mailto:`.
 
-Opublikowana wcześniej wersja OpenAI Sites pozostaje nienaruszona. Plik `.openai/hosting.json` jest zachowany jako ślad pochodzenia i identyfikator istniejącego projektu, ale wersja MyDevil nie używa go, nagłówków OpenAI ani Cloudflare Workers.
+Prywatne repozytorium GitHub jest jedynym źródłem kodu, a MyDevil jedynym środowiskiem i procesem publikacji.
 
 ## Kontrola jakości
 
@@ -39,7 +39,7 @@ app.js
 out/
 ```
 
-Nie wysyłaj źródeł, `README.md`, `PROJECT_CONTEXT.md`, `.openai/`, `.git/`, konfiguracji builda, `package.json`, lockfile, `node_modules/`, `.next/`, `dist/`, `.vinext/`, logów, plików środowiskowych ani sekretów.
+Nie wysyłaj źródeł, `README.md`, `PROJECT_CONTEXT.md`, `.git/`, konfiguracji builda, `package.json`, lockfile, `node_modules/`, `.next/`, logów, plików środowiskowych ani sekretów.
 
 Na macOS twórz archiwum z `COPYFILE_DISABLE=1` i wykluczaj `.DS_Store` oraz `._*`.
 
@@ -86,8 +86,7 @@ Jeżeli kontrola produkcji się nie powiedzie, przywróć ostatni kompletny kata
 
 - główne repozytorium: `git@github.com:jarekgrzabel/architekcichmury.pl.git`;
 - repozytorium jest prywatne;
-- zdalna nazwa `origin` wskazuje GitHub;
-- pierwotne repozytorium OpenAI Sites pozostaje zachowane jako zdalna nazwa `sites`;
+- zdalna nazwa `origin` wskazuje GitHub i jest jedynym repozytorium używanym do utrzymania strony;
 - do operacji GitHub używaj klucza `/Users/jarek/.ssh/github` z `-F /dev/null` i `IdentitiesOnly=yes`;
 - nigdy nie kopiuj klucza do projektu ani nie zapisuj sekretów w konfiguracji Git;
 - `README.md` i `PROJECT_CONTEXT.md` należą do prywatnego repozytorium, ale nie są częścią paczki wdrażanej na MyDevil;

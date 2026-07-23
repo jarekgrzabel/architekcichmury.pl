@@ -2,7 +2,7 @@
 
 Responsywna, jednostronicowa strona wizerunkowa firmy doradczej specjalizującej się w AWS, DevOps, FinOps i agentic AI.
 
-Projekt powstał w OpenAI Sites, ale jego głównym sposobem publikacji jest teraz niezależny, statyczny eksport Next.js przeznaczony dla MyDevil. Strona nie wymaga bazy danych, logowania, funkcji Cloudflare ani usług OpenAI w czasie działania.
+Samodzielny projekt Next.js publikowany jako statyczny eksport na hostingu MyDevil. Strona nie wymaga bazy danych, logowania ani zewnętrznego środowiska aplikacyjnego.
 
 Wersja produkcyjna: [https://architekcichmury.pl](https://architekcichmury.pl).
 
@@ -38,8 +38,8 @@ out/
 
 `app.js` korzysta wyłącznie z modułów wbudowanych Node.js. Serwuje statyczny eksport, zwraca prawdziwe odpowiedzi 404, ustawia cache dla wersjonowanych assetów i dodaje nagłówki bezpieczeństwa, w tym CSP, HSTS, ochronę przed framingiem i MIME sniffingiem.
 
-Źródła, dokumentacja, `.openai/`, `.git/`, `node_modules/`, `.next/`, `dist/`, pliki środowiskowe i sekrety nie są częścią paczki produkcyjnej.
+Źródła, dokumentacja, `.git/`, `node_modules/`, `.next/`, pliki środowiskowe i sekrety nie są częścią paczki produkcyjnej.
 
-## Zgodność z OpenAI Sites
+## Źródło prawdy
 
-Identyfikator istniejącego projektu i konfiguracja Sites pozostają w `.openai/hosting.json` wyłącznie jako ślad pochodzenia projektu. Opublikowana wcześniej wersja Sites pozostaje nienaruszona. Nowa wersja dla MyDevil nie korzysta z tych danych, Cloudflare ani mechanizmu uwierzytelniania Sites.
+Prywatne repozytorium GitHub jest jedynym źródłem kodu, a `https://architekcichmury.pl` na MyDevil — jedynym środowiskiem produkcyjnym i jedyną ścieżką publikacji.
