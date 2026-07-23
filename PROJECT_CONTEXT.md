@@ -14,6 +14,10 @@ Produkcja działa pod adresem [https://architekcichmury.pl](https://architekcich
 - Runtime MyDevil: `app.js` + `out/`, bez instalowania zależności na serwerze.
 - Lokalnie hostowane fonty Geist; brak pobierania fontów podczas produkcyjnego builda.
 - Brak bazy danych, logowania, API, uploadów i funkcji serwerowych.
+- Identyfikacja używa znaku „Cloud C” z literą „Lambda A”: kontur
+  chmury/C i węzły są w AWS Orange `#FF9900`, a litera A oraz rama
+  architektoniczna są białe na czarnym tle. Ten sam znak jest używany w
+  nagłówku, stopce i faviconie.
 - Adres kontaktowy nie występuje w statycznym HTML. Przycisk ujawnia go dopiero
   po interakcji użytkownika, dekodując go po stronie przeglądarki; ujawniony
   adres staje się linkiem `mailto:`.

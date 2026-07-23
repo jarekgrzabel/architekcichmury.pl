@@ -5,6 +5,10 @@ export const metadata: Metadata = {
   title: "Architekci Chmury | Doradztwo AWS",
   description:
     "Strategia, architektura, DevOps, FinOps i agentic AI na AWS. Doradztwo oparte na ponad 20 latach doświadczenia w IT.",
+  icons: {
+    icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
+    shortcut: "/favicon.svg",
+  },
   keywords: [
     "AWS consulting",
     "doradztwo AWS",

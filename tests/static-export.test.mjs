@@ -57,6 +57,14 @@ test("eksport zawiera kompletną stronę Architekci Chmury", async () => {
   assert.match(html, /<html[^>]*lang="pl"/i);
   assert.match(html, /<title>Architekci Chmury \| Doradztwo AWS<\/title>/i);
   assert.match(html, /Budujemy/);
+  assert.match(html, /class="brand-mark"/);
+  assert.match(html, /class="logo-cloud-c"/);
+  assert.match(html, /class="logo-lambda-a"/);
+  assert.match(html, /class="brand-name-cloud">Chmury/);
+  assert.match(
+    html,
+    /<link rel="icon" href="\/favicon\.svg" type="image\/svg\+xml"\/>/,
+  );
   assert.match(html, /Migracje i modernizacja AWS/);
   assert.match(html, /Migracje · Modernizacja · Agenci AI/);
   assert.match(html, /AWS Community Builder/);
@@ -74,6 +82,17 @@ test("eksport zawiera kompletną stronę Architekci Chmury", async () => {
   assert.doesNotMatch(html, /kontakt@architekcichmury\.pl/i);
   assert.doesNotMatch(html, /mailto:/i);
   assert.doesNotMatch(html, /oai-authenticated-user|chatgpt\.site/i);
+});
+
+test("favicon używa finalnego znaku Cloud C i palety AWS", async () => {
+  const favicon = await readFile(
+    new URL("../out/favicon.svg", import.meta.url),
+    "utf8",
+  );
+
+  assert.match(favicon, /#ff9900/i);
+  assert.match(favicon, /M38 83 60 39 82 83/);
+  assert.doesNotMatch(favicon, /#(?:0078d4|0089d6|00a4ef|007fff)/i);
 });
 
 test("serwer zwraca stronę i bezpieczne nagłówki", async () => {

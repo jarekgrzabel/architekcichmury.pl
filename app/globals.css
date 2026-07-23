@@ -54,11 +54,11 @@
   --ink: #0b0d0c;
   --panel: #111412;
   --panel-soft: #151916;
-  --cream: #f2ede1;
-  --muted: #b8b3a9;
-  --orange: #ff5a1f;
-  --line: rgba(242, 237, 225, 0.14);
-  --line-soft: rgba(242, 237, 225, 0.08);
+  --cream: #ffffff;
+  --muted: #b8b8b8;
+  --orange: #ff9900;
+  --line: rgba(255, 255, 255, 0.14);
+  --line-soft: rgba(255, 255, 255, 0.08);
   --font-geist-sans: "Geist", "Helvetica Neue", Arial, sans-serif;
   --font-geist-mono: "Geist Mono", Consolas, monospace;
 }
@@ -130,22 +130,54 @@ a {
   display: inline-flex;
   width: max-content;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   font-size: 15px;
   font-weight: 650;
   letter-spacing: -0.02em;
 }
 
 .brand-mark {
-  display: grid;
-  width: 34px;
-  height: 34px;
-  place-items: center;
-  border: 1px solid var(--orange);
+  display: block;
+  width: 52px;
+  height: 52px;
+  flex: 0 0 auto;
+  overflow: visible;
+}
+
+.logo-blueprint-frame,
+.logo-lambda-a {
+  fill: none;
+  stroke: var(--cream);
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+}
+
+.logo-blueprint-frame {
+  stroke-width: 4;
+}
+
+.logo-lambda-a {
+  stroke-width: 6;
+}
+
+.logo-cloud-c {
+  fill: none;
+  stroke: var(--orange);
+  stroke-width: 4.5;
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+}
+
+.logo-cloud-node {
+  fill: var(--orange);
+}
+
+.brand-name {
+  white-space: nowrap;
+}
+
+.brand-name-cloud {
   color: var(--orange);
-  font-family: var(--font-geist-mono), monospace;
-  font-size: 11px;
-  letter-spacing: 0.08em;
 }
 
 .main-nav {
@@ -222,7 +254,7 @@ a {
   height: 7px;
   border-radius: 50%;
   background: var(--orange);
-  box-shadow: 0 0 0 5px rgba(255, 90, 31, 0.12);
+  box-shadow: 0 0 0 5px rgba(255, 153, 0, 0.12);
   animation: status-pulse 2.8s ease-in-out infinite;
 }
 
@@ -303,7 +335,7 @@ a {
   overflow: hidden;
   border-left: 1px solid var(--orange);
   background:
-    radial-gradient(circle at 62% 54%, rgba(255, 90, 31, 0.06), transparent 33%),
+    radial-gradient(circle at 62% 54%, rgba(255, 153, 0, 0.06), transparent 33%),
     rgba(17, 20, 18, 0.52);
 }
 
@@ -730,11 +762,14 @@ a {
 }
 
 .expert .section-code {
-  color: #d8430c;
+  color: var(--ink);
 }
 
 .expert-heading h2 em {
-  color: #d8430c;
+  display: inline-block;
+  padding: 0 0.12em;
+  background: var(--orange);
+  color: var(--ink);
   font-style: normal;
 }
 
@@ -794,7 +829,9 @@ a {
 }
 
 .expert-spec .expert-focus {
-  color: #d8430c;
+  border-left: 4px solid var(--orange);
+  padding-left: 14px;
+  color: var(--ink);
   font-size: 18px;
   letter-spacing: -0.025em;
   line-height: 1.35;
@@ -802,7 +839,7 @@ a {
 
 .expert-spec strong a {
   color: inherit;
-  text-decoration-color: rgba(216, 67, 12, 0.55);
+  text-decoration-color: var(--orange);
   text-decoration-thickness: 1px;
   text-underline-offset: 4px;
   transition:
@@ -811,20 +848,20 @@ a {
 }
 
 .expert-spec strong a span {
-  color: #d8430c;
+  color: var(--ink);
   font-family: inherit;
   font-size: inherit;
   letter-spacing: 0;
 }
 
 .expert-spec strong a:hover {
-  color: #d8430c;
-  text-decoration-color: #d8430c;
+  color: var(--ink);
+  text-decoration-color: var(--orange);
 }
 
 .expert-spec strong a:focus-visible {
   border-radius: 2px;
-  outline: 2px solid #d8430c;
+  outline: 2px solid var(--ink);
   outline-offset: 4px;
 }
 
@@ -947,10 +984,10 @@ footer > span {
 @keyframes status-pulse {
   0%,
   100% {
-    box-shadow: 0 0 0 5px rgba(255, 90, 31, 0.12);
+    box-shadow: 0 0 0 5px rgba(255, 153, 0, 0.12);
   }
   50% {
-    box-shadow: 0 0 0 10px rgba(255, 90, 31, 0);
+    box-shadow: 0 0 0 10px rgba(255, 153, 0, 0);
   }
 }
 
@@ -1019,7 +1056,7 @@ footer > span {
     height: 76px;
   }
 
-  .brand > span:last-child {
+  .brand-name {
     display: none;
   }
 

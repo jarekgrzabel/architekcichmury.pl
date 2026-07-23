@@ -1,3 +1,4 @@
+import { CloudCLogo } from "./cloud-c-logo";
 import { ProtectedContact } from "./protected-contact";
 
 const services = [
@@ -75,10 +76,10 @@ export default function Home() {
 
       <header className="site-header">
         <a className="brand" href="#top" aria-label="Architekci Chmury — strona główna">
-          <span className="brand-mark" aria-hidden="true">
-            AC
+          <CloudCLogo />
+          <span className="brand-name">
+            <span>Architekci</span> <span className="brand-name-cloud">Chmury</span>
           </span>
-          <span>Architekci Chmury</span>
         </a>
 
         <nav className="main-nav" aria-label="Główna nawigacja">
@@ -320,11 +321,15 @@ export default function Home() {
       </section>
 
       <footer>
-        <a className="brand footer-brand" href="#top">
-          <span className="brand-mark" aria-hidden="true">
-            AC
+        <a
+          className="brand footer-brand"
+          href="#top"
+          aria-label="Architekci Chmury — wróć na początek"
+        >
+          <CloudCLogo />
+          <span className="brand-name">
+            <span>Architekci</span> <span className="brand-name-cloud">Chmury</span>
           </span>
-          <span>Architekci Chmury</span>
         </a>
         <p>Architektura AWS, która pracuje dla biznesu.</p>
         <span>© 2026 ARCHITEKCI CHMURY</span>
